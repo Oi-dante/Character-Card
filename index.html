@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="atropos/atp.min.css">
+  <script src="./atropos/atp.min.js"></script>
 
   <title>Character-Card</title>
 
@@ -17,68 +19,84 @@
 
 <body>
 
-  <div class="container">
-    <div class="cards-back">
-      
-    </div>
-
+  <div class="atropos container">
+    <div class="cards">
+      <div class="cards-back"data-atropos-offset="2">
+      </div>
+  
     <div class="card-center ">
-      <div class="card-info">
-        <header>
-          <h2>SHUN ANDRÔMEDA</h2>
-
-          <span>
-            Era um dos cem órfãos reunidos pela fundação Graad, foi enviado á ilha de Andrômeda para se tornar um cavaleiro de Atena.
-          </span>
-
-        </header>
+  
+      <!-- scale container (required) -->
+      <div class="atropos-scale">
+        <!-- rotate container (required) -->
+        <div class="atropos-rotate">
+          <!-- inner container (required) -->
+          <div class="atropos-inner">
+            <div class="card-info">
+              <header>
+                <h2 data-atropos-offset="5">SHUN ANDRÔMEDA</h2>
+      
+                <span>
+                  Era um dos cem órfãos reunidos pela fundação Graad, foi enviado á ilha de Andrômeda para se tornar um cavaleiro de Atena.
+                </span>
+      
+              </header>
+              
+              
+              <img src="assets/card-front/Character.png" alt="shun de Andrômeda" data-atropos-offset="4">
+              
+              <main>
+                <div class="info">
+                  <span>Idade</span>
+                  <h4>13</h4>
+                </div>
         
-        <div class="character">
-          <img src="assets/card-front/Character.png" alt="shun de Andrômeda">
+                <div class="info">
+                  <span>Espécie</span>
+                  <h4>Humana</h4>
+                </div>
+        
+                <div class="info">
+                  <span>Altura</span>
+                  <h4>1,65m</h4>
+                </div>
+        
+                <div class="info">
+                  <span>Local de Treinamento</span>
+                  <h4>Ilha de Andrômeda</h4>
+                </div>
+        
+                <div class="info">
+                  <span>Mestre</span>
+                  <h4>Daidalos de Cefeu</h4>
+                </div>
+        
+                <div class="info">
+                  <span>Habilidade</span>
+                  <h4>Andromeda Nebula, Nebula Chain, Rolling Defense, Thunder Wave, Nebula Stream, Nebula Storm</h4>
+                </div>
+              </main>
+            </div>
+          </div>
         </div>
       </div>
-      
-      <main>
-        <div class="info">
-          <span>Idade</span>
-          <h4>13</h4>
-        </div>
-
-        <div class="info">
-          <span>Espécie</span>
-          <h4>Humana</h4>
-        </div>
-
-        <div class="info">
-          <span>Altura</span>
-          <h4>1,65m</h4>
-        </div>
-
-        <div class="info">
-          <span>Local de Treinamento</span>
-          <h4>Ilha de Andrômeda</h4>
-        </div>
-
-        <div class="info">
-          <span>Mestre</span>
-          <h4>Daidalos de Cefeu</h4>
-        </div>
-
-        <div class="info">
-          <span>Habilidade</span>
-          <h4>Andromeda Nebula, Nebula Chain, Rolling Defense, Thunder Wave, Nebula Stream, Nebula Storm</h4>
-        </div>
-
-      </main>
-
     </div>
 
-    <div class="cards-back">
-      <h1>イントセイヤ  聖闘士星矢セ</h1>
+
+      <div class="cards-back"data-atropos-offset="1" >
+        <h1>イントセイヤ  聖闘士星矢セ</h1>
+      </div>
+
     </div>
+    
   </div>
 
-  
+  <script>
+    new Atropos ({
+      el: ".atropos"
+    })
+  </script>
+ 
   
 </body>
 </html>

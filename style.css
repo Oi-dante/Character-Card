@@ -20,15 +20,20 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   display: flex;
   justify-content: center;
+  align-items: center;
 
-  color: white;
+  
 }
 
-.container {
+
+.container, 
+.cards {
   display: flex;
-  gap: 2rem;
+  align-items: center;
 
 }
+
+/* CARDS LEFT/RIGHT */
 
 .cards-back {
   width: 348px;
@@ -39,12 +44,14 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  font-weight: bold;
+  writing-mode: vertical-lr;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 700;
 } 
 
 .cards-back h1 {
-  -webkit-text-stroke: 1px;
+  -webkit-text-stroke: 0.7px;
   -webkit-text-fill-color: transparent;
 }
 
@@ -66,6 +73,39 @@ body{
   position: relative;
 }
 
+img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  gap: 1rem;
+  width: 200px;
+}
+
+main .info h4{
+  color: var(--clr-descripiton);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 130%;
+   
+}
+
+main .info span{
+  color: var(--clr-if-tittle);
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 15px;
+}
+
+/* CARD-INFO */
 .card-info {
   padding: 48px 120px 60px 48px;
 }
@@ -97,10 +137,4 @@ body{
   font-size: 16px;
   line-height: 18px;
   
-}
-
-.character {
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
